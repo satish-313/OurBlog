@@ -57,7 +57,7 @@ class UpdatePost(UpdateView):
 class DetelePost(DeleteView):
     model = Post
     template_name = 'deletePost.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('home:home')
 
 class AddCategory(CreateView):
     model = Category
